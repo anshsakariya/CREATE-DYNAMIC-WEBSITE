@@ -1,0 +1,76 @@
+/* Styles for container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for inner */
+.inner {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Styles for box */
+.box {
+    background-color: #87ceeb; /* Sky blue color */
+    border-radius: 20px; /* Increase border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase box shadow for depth effect */
+    padding: 30px; /* Increase padding for content spacing */
+    text-align: center;
+    position: relative; /* Add position relative for positioning number element */
+}
+
+/* Styles for logo image */
+#logoImage {
+    width: 5px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Change logo image style on hover */
+#logoImage:hover {
+    transform: rotate(90deg);
+}
+
+/* Styles for button */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button style on hover */
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styles for text */
+.text {
+    margin-bottom: 30px; /* Increase margin for spacing */
+}
+
+
+
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.number:hover img{
+    animation: rot 1s linear;
+}
